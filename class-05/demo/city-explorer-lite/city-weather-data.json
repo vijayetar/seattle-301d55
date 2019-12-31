@@ -1,0 +1,36 @@
+{
+    "data": [
+      {
+        "time": 1567792089082,
+        "summary": "Foggy in the morning."
+      },
+      {
+        "time": 1567672088082,
+        "summary": "Partly cloudy until afternoon."
+      },
+      {
+        "time": 1567572088082,
+        "summary": "Partly cloudy throughout the day."
+      },
+      {
+        "time": 1567472088082,
+        "summary": "Mostly cloudy throughout the day."
+      },
+      {
+        "time": 1567372088082,
+        "summary": "Light rain in the evening."
+      },
+      {
+        "time": 1567272088082,
+        "summary": "Rain in the morning and overnight."
+      },
+      {
+        "time": 1567172088082,
+        "summary": "Light rain in the morning."
+      },
+      {
+        "time": 1567072088082,
+        "summary": "Mostly cloudy until evening."
+      }
+    ]
+}
