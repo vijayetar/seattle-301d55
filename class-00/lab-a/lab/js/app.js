@@ -40,7 +40,7 @@ function displayPics(){
   }
   // console.log(rando);
   // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `var to `const`.
-  // It looks like with let rando = makeRandom() is scoped within the while loop only
+  // It looks like with const rando = makeRandom() is scoped within the while loop only
   console.log(viewed);
 
   for (let i = 0; i < 3; i++){
@@ -53,12 +53,12 @@ function displayPics(){
 
 function handleClick(event) {
   if (event.target.id === 'image_container') {
-    return alert('Be sure to click directly on an image!!');
+    return alert(`Be sure to click directly on an image!!`);
   }
   totalClicks += 1;
   if(totalClicks > 24) {
     container.removeEventListener('click', handleClick);
-    container.style.display = 'none';
+    container.style.display = `none`;
     showList();
     makeChart();
   }
@@ -123,14 +123,14 @@ container.addEventListener('click', handleClick);
 
 document.getElementById('bus').addEventListener('click', function(){
   localStorage.removeItem('busmall');
-  console.log('Local storage was cleared!');
+  console.log(`Local storage was cleared!`);
 });
 
 if(localStorage.busmall){
-  console.log('Local storage data exists');
+  console.log(`Local storage data exists`);
   allProducts = JSON.parse(localStorage.busmall);
 } else {
-  console.log('There is no local storage data; initialize app by creating instances');
+  console.log(`There is no local storage data; initialize app by creating instances`);
   for(let i = 0; i < names.length; i++) {
     new Product(names[i]);
   }
